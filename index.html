@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Autoridad del Canal de Panamá</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/acp1.min.css" />
+		<link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
+		<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.0.min.css" />
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.mobile-1.4.0.min.js"></script>
+		<script type="application/javascript" src="js/maxlen.js"></script>
+		<script type="application/javascript" src="js/fastclick.js"></script>
+		<script type="application/javascript" src="js/application.js"></script>
+		<script>
+	
+		function exitAppPopup() {
+        navigator.notification.confirm('Exit PhoneGap Demo?', 
+		      function(button) {
+                  if (button == 2) {
+                      navigator.app.exitApp();
+                  }
+              }
+            , 'Exit'
+            , 'No,Yes'
+        );  
+        return false;
+    }
+	
+		</script>
+</head>
+<body>
+<!-- Start of first page: #one -->
+<div data-role="page" id="login">
+	<div data-role="header" class="header-cnt">
+		<h1 id="logo"><a href="#"></a></h1>
+		<h1>Ejemplo de Login</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content" >
+			 <h6 style="text-align: justify;margin-top:0px;">La información contenida en este sitio es de propiedad de la ACP; 
+			 por lo tanto, se prohíbe su modificación o alteración, así como su copia, 
+			 distribución, transmisión, reproducción o publicación sin que medie una 
+			 autorización previa por parte del Departamento de Tecnología e Informática.</h6>
+		<div class="ui-bar-c ui-corner-all ui-shadow" style="padding:1em">
+                <div id="divnombreusuario"  data-role="fieldcontain">
+                    <label  id="labelnombreusuario" for="textnombreusuario">Nombre de usuario:</label>
+                    <input type="text" id="textnombreusuario" placeholder="Nombre de usuario" data-mini="false" data-theme="b">	
+				</div>
+				<div  id="divcontrasena" data-role="fieldcontain">
+					<label  id="labelcontrasena"  for="contrasena">Contraseña:</label>
+					<input data-maxsize="6" name="contrasena" pattern="[0-9]*" id="contrasena" value="" autocomplete="off" type="password" data-theme="b" data-mini="false">
+                </div>
+                <input type="checkbox" id="checkboxrecordarme"  data-theme="b" data-mini="false">
+                <label for="checkboxrecordarme">Recordarme?</label>       
+				<p><a type="submit" id="loginentrar" class="ui-btn ui-shadow ui-corner-all">Login</a></p>		
+		</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" data-theme="a">
+<div><h6 style="text-align: center;">Autoridad del Canal de Panamá <br />Todos los Derechos Reservados 2014 ©<br/><a href="#terminosdeuso"  data-rel="dialog" data-transition="pop">Términos de uso.</a></h6></div>
+	</div><!-- /footer -->
+</div><!-- /page one -->
+
+<!-- Start of second page: #contenido -->
+<div data-role="page" id="contenido" data-theme="a">
+
+	<div data-role="header">
+		<h1>contenido recibido de Azure</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content" >
+		<p id="myWSResult"></p>
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-theme="a">
+<div><h6 style="text-align: center;">Autoridad del Canal de Panamá <br />Todos los Derechos Reservados 2014 ©<br/><a href="#terminosdeuso"  data-rel="dialog" data-transition="pop">Términos de uso.</a></h6></div>
+	</div><!-- /footer -->
+</div><!-- /page contenido -->
+
+<!-- Start of third page: #terminosdeuso -->
+<div data-role="page" id="terminosdeuso">
+
+	<div data-role="header" data-theme="b">
+		<h1>Términos de Uso</h1>
+	</div><!-- /header -->
+
+	<div role="main" data-theme="b" class="ui-content">	
+	<div>                
+	    <a data-role="button" data-rel="back" data-icon="arrow-l" data-theme="b" data-inline="true">Regresar</a>
+	</div>	
+	         <h1>Términos de Uso</h1>
+			 <h5 style="text-align: justify;margin-top:0px;">Copyright @ ACP 1997-2014 – La información, documentos, 
+			 reportes, mapas y fotografías que aparecen en este sitio son de propiedad de la ACP; por lo tanto se prohíbe 
+			 su modificación o alteración, así como su copia, distribución, transmisión, reproducción o publicación con 
+			 fines comerciales o lucrativos. Su uso con fines comerciales o lucrativos requiere autorización previa 
+			 y expresa de la ACP.</h5>	
+	</div><!-- /content -->
+
+	<div data-role="footer">
+	</div><!-- /footer -->
+</div><!-- /page terminosdeuso -->
+
+</body>
+</html>
