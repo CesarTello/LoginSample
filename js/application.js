@@ -103,7 +103,8 @@
 					
 					
 					}else{
-						alert('El usuario/contraseña son inválidos');
+						$.mobile.changePage( "#invalidpassword", { transition: "slideup"} );
+						//alert('El usuario/contraseña son inválidos');
 					}
 
 		         //end of success return call			
