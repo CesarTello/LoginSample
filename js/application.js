@@ -8,7 +8,7 @@
 
 		//add event listener fx for controls
 		contrasenaBtn.addEventListener('touchend', function(event) {
-			alert('touched on ok');
+			//alert('touched on ok');
 		}, false);
 
 		contrasenaBtn.addEventListener('click', function(event) {
