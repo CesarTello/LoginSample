@@ -116,34 +116,15 @@
 		  
 	}, false);
 	
+
+	function onDeviceReady() {
+		var element = document.getElementById('deviceProperties');
+		element.innerHTML = 'Device Name: '     + device.name     + '<br />' + 
+							'Device Platform: ' + device.platform + '<br />' + 
+							'Device UUID: '     + device.uuid     + '<br />' + 
+							'Device Version: '  + device.version  + '<br />';
+	}
 	
 
 	
-/*
-$(document).ready(function()
-{
-alert('ready!');
 
-		$('#loginentrar').click(function(e) {
-			e.stopImmediatePropagation();
-			e.preventDefault();		
-
-			try
-			  {
-				alert('herererer');
-			  }
-			catch(err)
-			  {
-			  //Handle errors
-			  }				
-
-		});	
-
-
-
-	
-		
-		
-});	// end of device ready
-
-*/

@@ -13,22 +13,10 @@
 		<script type="application/javascript" src="js/maxlen.js"></script>
 		<script type="application/javascript" src="js/fastclick.js"></script>
 		<script type="application/javascript" src="js/application.js"></script>
-		<script>
-	
-		function exitAppPopup() {
-        navigator.notification.confirm('Exit PhoneGap Demo?', 
-		      function(button) {
-                  if (button == 2) {
-                      navigator.app.exitApp();
-                  }
-              }
-            , 'Exit'
-            , 'No,Yes'
-        );  
-        return false;
-    }
-	
-		</script>
+		<script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+		<script type="text/javascript" charset="utf-8">
+		document.addEventListener("deviceready", onDeviceReady, false);
+		</script>		
 </head>
 <body>
 <!-- Start of first page: #one -->
@@ -56,6 +44,7 @@
                 <label for="checkboxrecordarme">Recordarme?</label>       
 				<p><a type="submit" id="loginentrar" class="ui-btn ui-shadow ui-corner-all">Login</a></p>		
 		</div>
+		<p id="deviceProperties">Loading device properties...</p>
 	</div><!-- /content -->
 
 	<div data-role="footer" data-theme="a">
@@ -114,8 +103,9 @@
 	<div>                
 	    <a data-role="button" data-rel="back" data-icon="arrow-l" data-theme="b" data-inline="true">OK</a>
 	</div>	
-	         <h1>Atención</h1>
-			 <h5 style="text-align: justify;margin-top:0px;">El usuario y/o contraseña proporcionados son inválidos.  Los mismos son necesarios para firmarse en el sistema y utilizar la aplicación.  Si considera que esto es un error comuníquese con soporte técnico.</h5>	
+			<h1 id="denyimage"><a href="#"></a></h1>
+	        <h1>Atención</h1>
+			<h5 style="text-align: justify;margin-top:0px;">El usuario y/o contraseña proporcionados son inválidos.  Los mismos son necesarios para firmarse en el sistema y utilizar la aplicación.  Si considera que esto es un error comuníquese con soporte técnico.</h5>	
 	</div><!-- /content -->
 
 	<div data-role="footer">
