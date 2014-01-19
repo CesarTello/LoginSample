@@ -8,62 +8,94 @@
 /* ---------------------------------------------------------------------- */
 /* Standard 960 or larger (browsers) */
 @media only screen and (min-width: 960px) {
-	.ui-content #denyimage  a{
-    background: url("images/denegado900.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-    display: block;
-    height:600px;
-	width:900px;	
-    margin-left: auto;
-    margin-right: auto;	
-	padding:0;
-}
-
+		.ui-content #denyimage  a{
+		background: url("images/denegado900.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+		display: block;
+		height:600px;
+		width:900px;	
+		margin-left: auto;
+		margin-right: auto;	
+		padding:0;
+	}
+		#houstonimage  a{
+		background: url("images/houston900.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+		display: block;
+		height:600px;
+		width:900px;	
+		margin-left: auto;
+		margin-right: auto;	
+		padding:0;
+	}	
 }
 /* ---------------------------------------------------------------------- */
 /* Smaller than standard 960 (devices and browsers) */
 @media only screen and (max-width: 959px) {
-	.ui-content #denyimage  a{
-    background: url("images/denegado600.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-    display: block;
-    height:400px;
-	width:600px;	
-    margin-left: auto;
-    margin-right: auto;	
-	padding:0;
-}
-
+		.ui-content #denyimage  a{
+		background: url("images/denegado600.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+		display: block;
+		height:400px;
+		width:600px;	
+		margin-left: auto;
+		margin-right: auto;	
+		padding:0;
+	}
+		#houstonimage  a{
+		background: url("images/houston600.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+		display: block;
+		height:400px;
+		width:600px;	
+		margin-left: auto;
+		margin-right: auto;	
+		padding:0;
+	}	
 }
 
 /* ---------------------------------------------------------------------- */
 /* Smaller than standard 650 (devices and browsers) */
 @media only screen and (max-width: 650px) {
-	.ui-content #denyimage  a{
-    background: url("images/denegado480.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-    display: block;
-    height:320px;
-	width:480px;	
-    margin-left: auto;
-    margin-right: auto;	
-	padding:0;
-}
-
+		.ui-content #denyimage  a{
+		background: url("images/denegado480.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+		display: block;
+		height:320px;
+		width:480px;	
+		margin-left: auto;
+		margin-right: auto;	
+		padding:0;
+	}
+		#houstonimage  a{
+		background: url("images/houston480.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+		display: block;
+		height:320px;
+		width:480px;	
+		margin-left: auto;
+		margin-right: auto;	
+		padding:0;
+	}	
 }
 
 /* ---------------------------------------------------------------------- */
-/* Smaller than standard 520 (devices and browsers) */
-@media only screen and (max-width: 520px) {
-.ui-content #denyimage  a{
-    background: url("images/denegado320.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-    display: block;
-    height:213px;
-	width:320px;	
-    margin-left: auto;
-    margin-right: auto;	
-	padding:0;
-}
+/* Smaller than standard 480 (devices and browsers) */
+@media only screen and (max-width: 480px) {
+		.ui-content #denyimage  a{
+		background: url("images/denegado320.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+		display: block;
+		height:213px;
+		width:320px;	
+		margin-left: auto;
+		margin-right: auto;	
+		padding:0;
+	}
+		#houstonimage  a{
+		background: url("images/houston320.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+		display: block;
+		height:213px;
+		width:320px;	
+		margin-left: auto;
+		margin-right: auto;	
+		padding:0;
+	}	
 }
 
-}
 .ui-content #denyimage {
 	width:100%;
 	padding:0;
@@ -95,16 +127,24 @@
 	width:250px;
 }
 #labelnombreusuario{
-	width:150px;
+	font-size:18px !important;
+	width:200px;
 }
 #textnombreusuario{
+	font-size:18px !important;
 	/*width:150px;*/
 }
 #contrasena{
+	font-size:18px !important;
 	/*width:150px;*/
 	padding:0;
 }
 #labelcontrasena{
-	width:150px;
+	font-size:18px !important;
+	width:200px;
+	padding:0;
+}
+#advertencia{
+	font-size:14px !important;
 	padding:0;
 }
