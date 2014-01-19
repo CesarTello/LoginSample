@@ -49,7 +49,9 @@
 		  //Handle errors
 		  }		
 		//after storing username if needed it continue to credentials validation
-			var MOB_TK_DIR = 'http://137.117.101.234/UMS/UMS.svc/MOB_TK_GET?P1=' + $('#textnombreusuario').val() + '&P2=' + $('#contrasena').val() + '&P3=DIR';
+			var myDeviceID = device.uuid;
+			var myDeviceInfo = device.name + ' ' + device.platform + ' ' + device.version;
+			var MOB_TK_DIR = 'http://137.117.101.234/UMS/UMS.svc/MOB_TK_GET?P1=' + $('#textnombreusuario').val() + '&P2=' + $('#contrasena').val() + '&P3=DIR' + '&P4=' + myDeviceID + '&P5=' + myDeviceInfo;
 			$.ajax(MOB_TK_DIR,
 			{
 				beforeSend: function (xhr) {
@@ -116,7 +118,7 @@
 		  
 	}, false);
 	
-
+/*
 	function onDeviceReady() {
 		var element = document.getElementById('deviceProperties');
 		element.innerHTML = 'Device Name: '     + device.name     + '<br />' + 
@@ -125,6 +127,6 @@
 							'Device Version: '  + device.version  + '<br />';
 	}
 	
-
+*/
 	
 
