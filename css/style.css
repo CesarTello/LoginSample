@@ -77,19 +77,19 @@
 /* Smaller than standard 480 (devices and browsers) */
 @media only screen and (max-width: 480px) {
 		.ui-content #denyimage  a{
-		background: url("images/denegado320.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+		background: url("images/denegado300.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
 		display: block;
-		height:213px;
-		width:320px;	
+		height:200px;
+		width:300px;	
 		margin-left: auto;
 		margin-right: auto;	
 		padding:0;
 	}
 		#houstonimage  a{
-		background: url("images/houston320.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+		background: url("images/houston300.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
 		display: block;
-		height:213px;
-		width:320px;	
+		height:200px;
+		width:300px;	
 		margin-left: auto;
 		margin-right: auto;	
 		padding:0;
@@ -124,7 +124,7 @@
 #loginentrar {
     margin-left: auto;
     margin-right: auto;	
-	width:250px;
+	width:230px;
 }
 #labelnombreusuario{
 	font-size:18px !important;
@@ -148,3 +148,4 @@
 	font-size:14px !important;
 	padding:0;
 }
+
